@@ -8,7 +8,7 @@
         <NuxtLink to="/requisicoes/useAsyncData"> useAsyncData </NuxtLink>
       </li>
       <li class="hover:text-emerald-500">
-        <NuxtLink to="/requisicoes/useAsyncData"> OFetch </NuxtLink>
+        <NuxtLink to="/requisicoes/OFetch"> OFetch </NuxtLink>
       </li>
     </ul>
   </div>

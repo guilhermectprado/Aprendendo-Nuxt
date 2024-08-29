@@ -42,7 +42,7 @@ const {
   error,
   refresh,
 } = await useAsyncData(
-  "chave-unica",
+  "chave-unica", // poderia ser 'pokemon-info'
   async () => {
     const [pokemonData, speciesData] = await Promise.all([
       $fetch(`https://pokeapi.co/api/v2/pokemon/${selectedPokemon.value}`),
@@ -89,11 +89,6 @@ Cada $fetch do promisse.all é possível ser modificada e usado modelo de requis
 Hidratação: O useAsyncData é ideal para buscar dados no servidor e hidratar o HTML antes de enviar para o cliente. 
 Isso significa que o cliente recebe uma página já preenchida com os dados, proporcionando uma experiência de usuário mais rápida e 
 suave.
-
-SSR (Server-Side Rendering): É fundamental para SEO e para aplicações que exigem um tempo de resposta inicial rápido.
-
-Pré-renderização: Permite que você pré-renderize suas páginas, gerando HTML estático que pode ser cacheado por CDNs, melhorando o 
-desempenho e a escalabilidade.
 
 Em resumo: Use useAsyncData quando você precisar de dados do servidor para renderizar a página inicial ou 
 qualquer outra página que exija dados pré-carregados. 
