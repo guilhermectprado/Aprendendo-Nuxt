@@ -1,6 +1,6 @@
 <template>
   <button
-    class="w-full p-4 mt-8 border bg-blue-500 rounded text-white text-center"
+    class="p-2 border bg-blue-500 rounded text-white text-center"
     :type="props.type"
     @click="handleClick"
   >

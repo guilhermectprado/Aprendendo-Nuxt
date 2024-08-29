@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center text-white">
-    <ul class="flex flex-col gap-4">
+  <div class="flex justify-center">
+    <ul class="flex flex-col gap-4 text-white">
       <li class="hover:text-emerald-500">
         <NuxtLink to="/contatos"> Básico - CRUD Contatos </NuxtLink>
       </li>

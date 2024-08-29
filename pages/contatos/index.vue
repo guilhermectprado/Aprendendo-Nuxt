@@ -15,7 +15,7 @@
     </ListItems>
   </div>
 
-  <UIButton @click="addContact"> Adicionar Contato </UIButton>
+  <UIButton @click="addContact" class="w-full"> Adicionar Contato </UIButton>
 </template>
 
 <!-- O Nuxt importa automatico, nao precisa por o import -->
