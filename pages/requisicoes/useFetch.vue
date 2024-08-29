@@ -28,7 +28,7 @@
     <div v-if="status === 'pending'">Carregando...</div>
     <div v-else-if="error">Erro: {{ error }}</div>
     <div v-else>
-      <pre>{{ charmander }}</pre>
+      <pre>{{ pokemon }}</pre>
     </div>
   </div>
 </template>
@@ -43,9 +43,9 @@ const endpoint = computed(() => {
 const {
   error,
   status,
-  data: charmander,
+  data: pokemon,
   refresh,
-} = await useLazyFetch(endpoint, {
+} = await useFetch(endpoint, {
   method: "GET",
   headers: {
     "Content-Type": "application/json",

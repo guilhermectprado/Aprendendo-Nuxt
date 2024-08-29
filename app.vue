@@ -6,7 +6,9 @@
       Inicio
     </h1>
   </header>
-  <main class="flex flex-row justify-center items-center py-8">
+  <main
+    class="flex flex-row justify-center items-center py-8 text-white overflow-x-hidden overflow-y-auto px-4"
+  >
     <div class="w-full max-w-4xl">
       <NuxtPage />
     </div>
