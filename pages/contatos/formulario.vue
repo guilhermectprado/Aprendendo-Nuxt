@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <form @submit.prevent="saveContact">
-      <UIInput label="Nome" type="texto" v-model="contato.nome" />
-      <UIInput label="Email" type="mail" v-model="contato.email" />
-      <UIInput label="Telefone" type="phone" v-model="contato.telefone" />
-      <UIButton type="submit"> Salvar Contato </UIButton>
-    </form>
-  </div>
+  <form @submit.prevent="saveContact">
+    <UIInput label="Nome" type="texto" v-model="contato.nome" />
+    <UIInput label="Email" type="mail" v-model="contato.email" />
+    <UIInput label="Telefone" type="phone" v-model="contato.telefone" />
+    <UIButton type="submit"> Salvar Contato </UIButton>
+  </form>
 </template>
 
 <script setup>
@@ -41,6 +39,6 @@ const saveContact = () => {
     createContact(contato);
   }
 
-  router.push("/");
+  router.push("/contatos");
 };
 </script>
