@@ -3,7 +3,7 @@
     <UIInput label="Nome" type="texto" v-model="contato.nome" />
     <UIInput label="Email" type="mail" v-model="contato.email" />
     <UIInput label="Telefone" type="phone" v-model="contato.telefone" />
-    <UIButton type="submit"> Salvar Contato </UIButton>
+    <UIButton type="submit" class="w-full"> Salvar Contato </UIButton>
   </form>
 </template>
 
